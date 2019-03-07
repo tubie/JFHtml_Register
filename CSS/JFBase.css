@@ -1,0 +1,32 @@
+body{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.registerBanner{
+    width: 100%;
+}
+
+.content{
+    left: 20px;
+    right: 20px;
+    background-color: blueviolet;
+}
+
+.phoneNmuberDiv{
+    height: 50px;
+    border-radius: 5px 5px;
+    margin-top: 20px;
+    position: relative;
+}
+.input_phone_number{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px;
+    padding-left: 80px;
+    background-color: red;
+    position: absolute;
+    color: blueviolet;
+    left: 0;
+}
+
