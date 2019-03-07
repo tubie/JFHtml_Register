@@ -10,7 +10,15 @@ body{
 .content{
     left: 20px;
     right: 20px;
-    background-color: blueviolet;
+    background-color: white;
+}
+
+/*//手机号*/
+.phoneNmuberDiv span{
+    line-height: 50px;
+    margin-left: 15px;
+    position: absolute;
+    color: blue;
 }
 
 .phoneNmuberDiv{
@@ -24,9 +32,32 @@ body{
     height: 100%;
     border-radius: 5px 5px;
     padding-left: 80px;
-    background-color: red;
     position: absolute;
-    color: blueviolet;
     left: 0;
 }
 
+
+/*//验证码*/
+.verificationCodeDiv span{
+
+
+    line-height: 50px;
+    margin-left: 15px;
+    position: absolute;
+    color: blue;
+}
+
+/*//手机号*/
+.verificationCodeDiv {
+    height: 50px;
+    border-radius: 5px 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.verificationCode{
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
