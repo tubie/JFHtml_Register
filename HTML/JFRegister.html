@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no"/>
     <title>登录注册</title>
 
     <!--//要用相对路径 ../代表  如果不是同级目录可以不用..-->
     <link rel="stylesheet" href="../CSS/JFBase.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
 </head>
 <body>
 
@@ -18,14 +21,19 @@
     <div id = "phoneNmuberDiv" class="phoneNmuberDiv font_normal">
         <input v-model = "phone_Nmuber" class="input_phone_number" type="tel" placeholder="请输入手机号" maxlength="11"/>
 
+
         <!--注意顺序-->
         <span><b>手机号</b></span>
     </div>
 
     <div id = "verificationCodeDiv" class="verificationCodeDiv" font_normal>
-        <input class="verificationCode font_normal" v-model = "verification_code"  type="text" placeholder="请输入验证码" maxlength="6"/>
-        <!--<input class="send_verificationCode"   type="text" placeholder="请输入验证码" maxlength="6"/>-->
+        <input v-model = "verification_code" class="verificationCode" type="text" placeholder="请输入验证码" maxlength="6"/>
         <span><b>验证码</b></span>
+
+    </div>
+
+    <div id="bottomDiv" class="bottomDiv">
+        <input type="button" class="loginButton"  value="登录"  >
 
     </div>
 
